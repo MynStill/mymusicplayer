@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PlayMusicActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/jay_img"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/music_back_img"
+        android:layout_margin="@dimen/marginSize"
+        android:onClick="onBackClick"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="480dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说好的幸福呢"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jay Chou"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/marginSize"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginSize"
+            >
+
+            <ImageView
+                android:id="@+id/iv_play_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/pause_music_white_img"
+                android:onClick="onPlayOrPauseMusicClick"
+                />
+
+            <ImageView
+                android:id="@+id/iv_stop_play_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/stop_play_music_img"
+                android:layout_marginLeft="@dimen/marginSize"
+                android:onClick="onStopPlayMusicClick"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
